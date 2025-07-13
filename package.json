@@ -1,0 +1,27 @@
+{
+  "name": "Helios Testnet Auto Bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "obfuscate": "javascript-obfuscator index.js --output dist/index.js --compact true --control-flow-flattening true --string-array true --self-defending true --target node"
+  },
+  "keywords": [],
+  "author": "Mr.Bip",
+  "license": "ISC",
+  "description": "Auto bot for Helios Testnet with Tor, onboarding, faucet, and staking features.",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "blessed": "^0.1.81",
+    "chalk": "^5.4.1",
+    "ethers": "^6.14.3",
+    "figlet": "^1.8.1",
+    "https-proxy-agent": "^7.0.6",
+    "socks-proxy-agent": "^8.0.5",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "javascript-obfuscator": "^4.1.1"
+  }
+}
